@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>News & Announcements</title>
+
+<style>
+body{
+    font-family:Arial;
+    margin:0;
+    background:#f2f6fc;
+}
+
+/* HEADER + FOOTER */
+header,footer{
+    background:#446bae;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* NAV */
+nav{
+    background:#062a63;
+    padding:10px;
+    text-align:center;
+}
+nav a{
+    color:white;
+    margin:0 15px;
+    text-decoration:none;
+    font-weight:bold;
+}
+nav a:hover{
+    color:#ffd24d;
+}
+
+/* CONTAINER */
+.container{
+    padding:30px;
+}
+
+/* GRID (LEFT + RIGHT = 2 COLUMNS) */
+.news-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+/* NEWS CARD */
+.news{
+    background: rgba(255,255,255,0.75);
+    backdrop-filter: blur(10px);
+    padding:15px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.news:hover{
+    transform: translateY(-5px);
+}
+
+/* IMAGE */
+.news img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:12px;
+    cursor:pointer;
+}
+
+/* TEXT */
+.news h3{
+    margin:10px 0 5px;
+    color:#0b3d91;
+}
+
+.date{
+    color:gray;
+    font-size:13px;
+    margin-bottom:10px;
+}
+
+.news p{
+    font-size:14px;
+    color:#333;
+    line-height:1.5;
+}
+
+/* RESPONSIVE */
+@media(max-width:700px){
+    .news-grid{
+        grid-template-columns:1fr;
+    }
+}
+
+/* LIGHTBOX */
+#lightbox{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.85);
+    display:none;
+    justify-content:center;
+    align-items:center;
+    z-index:999;
+}
+
+#lightbox img{
+    max-width:90%;
+    max-height:90%;
+    border-radius:10px;
+}
+
+#lightbox span{
+    position:absolute;
+    top:20px;
+    right:30px;
+    font-size:35px;
+    color:white;
+    cursor:pointer;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>News & Announcements</h1>
+</header>
+
+<nav>
+<a href="index (1).html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="news.html">News</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+
+<div class="news-grid">
+
+<!-- LEFT SIDE (3 POSTS) -->
+
+<div class="news">
+<img src="1.jpg" onclick="openImg(this.src)">
+<h3>1st Semester Annual Assembly Day</h3>
+<p class="date">June 29, 2025</p>
+<p>Community assembly for planning and updates of barangay programs.</p>
+</div>
+
+<div class="news">
+<img src="2.jpg" onclick="openImg(this.src)">
+<h3>Brgy. Quinagaringan joins LTIA Provincial Level</h3>
+<p class="date">March 20, 2025</p>
+<p>Recognition for outstanding barangay justice system performance.</p>
+</div>
+
+<div class="news">
+<img src="3.jpg" onclick="openImg(this.src)">
+<h3>Ash Wednesday held at Quinagaringan Elementary Annex</h3>
+<p class="date">March 5, 2025</p>
+<p>Religious gathering attended by students and community members.</p>
+</div>
+
+<!-- RIGHT SIDE (3 POSTS) -->
+
+<div class="news">
+<img src="4.jpg" onclick="openImg(this.src)">
+<h3>Tribu Pasi is Pintados Festival 2025 Champion</h3>
+<p class="date">March 17, 2025</p>
+<p>Celebration of cultural victory and city pride.</p>
+</div>
+
+<div class="news">
+<img src="5.jpg" onclick="openImg(this.src)">
+<h3>Kapistahan 2025 Opening Parade</h3>
+<p class="date">February 4, 2025</p>
+<p>Barangay participation in the city festival parade.</p>
+</div>
+
+<div class="news">
+<img src="6.jpg" onclick="openImg(this.src)">
+<h3>LTIA 1st Runner-Up Award</h3>
+<p class="date">March 28, 2025</p>
+<p>Recognition for excellence in barangay justice administration.</p>
+</div>
+
+</div>
+
+</div>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" onclick="closeImg()">
+    <span>&times;</span>
+    <img id="lightbox-img">
+</div>
+
+<script>
+function openImg(src){
+    document.getElementById("lightbox").style.display="flex";
+    document.getElementById("lightbox-img").src=src;
+}
+
+function closeImg(){
+    document.getElementById("lightbox").style.display="none";
+}
+</script>
+
+<footer>© 2026 Barangay Quinagaringan Pequeno</footer>
+
+</body>
+</html>

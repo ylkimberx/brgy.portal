@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Services - Barangay Quinagaringan Pequeño</title>
+
+<style>
+body{
+    font-family:Arial;
+    margin:0;
+    background:#f2f6fc;
+}
+
+/* HEADER + FOOTER */
+header,footer{
+    background:#446bae;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* NAV */
+nav{
+    background:#062a63;
+    padding:10px;
+    text-align:center;
+}
+nav a{
+    color:white;
+    margin:0 15px;
+    text-decoration:none;
+    font-weight:bold;
+}
+nav a:hover{
+    color:#ffd24d;
+}
+
+/* CONTAINER */
+.container{
+    padding:30px;
+}
+
+/* GRID (2x2 BOXES) */
+.services-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+/* CARD DESIGN */
+.service-box{
+    padding:25px;
+    border-radius:15px;
+    color:white;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.service-box:hover{
+    transform: translateY(-5px);
+}
+
+/* DIFFERENT COLORS */
+.clearance{
+    background: linear-gradient(135deg,#42a5f5,#1e88e5); /* BLUE */
+}
+
+.certificates{
+    background: linear-gradient(135deg,#66bb6a,#43a047); /* GREEN */
+}
+
+.health{
+    background: linear-gradient(135deg,#ef5350,#e53935); /* RED */
+}
+
+.emergency{
+    background: linear-gradient(135deg,#ffa726,#fb8c00); /* ORANGE */
+}
+
+/* TEXT */
+.service-box h2{
+    margin-top:0;
+}
+
+.service-box p{
+    font-size:14px;
+    line-height:1.6;
+}
+
+/* RESPONSIVE */
+@media(max-width:700px){
+    .services-grid{
+        grid-template-columns:1fr;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>Barangay Services</h1>
+</header>
+
+<nav>
+<a href="index (1).html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="news.html">News</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+
+<div class="services-grid">
+
+
+<div class="service-box clearance">
+<h2>📄 Document Request Services </h2>
+<p>
+    <br>Residents can request official documents online such as:</br>
+    <br>-Barangay Clearance</br>
+    <br>-Certificate of Residency</br>
+    <br>-Certificate of Indigency</br>
+</p>
+</div>
+
+
+<div class="service-box certificates">
+<h2>📑 Complaint and Blotter Reporting</h2>
+<p>
+   <br> A feature where residents can report:</br>
+   <br>-Neighborhood disputes</br>
+<br>-Noise complaints</br>
+<br>-Minor incidents</br>
+</p>
+</div>
+
+
+<div class="service-box health">
+<h2>🏥 Announcements and Community Updates</h2>
+<p>
+    <br>Allows residents to:</br>
+    <br>-Barangay meetings</br>
+    <br>-Clean-up drives and events</br>
+    <br>-Emergency notices</br>
+</p>
+</div>
+
+
+<div class="service-box emergency">
+<h2>🚨 Emergency Contact Services</h2>
+<p>
+    <br>Quick access to important contacts such as:</br>
+    <br>-Barangay officials</br>
+    <br>-Barangay tanod</br>
+    <br>-Police and fire station</br>
+</p>
+</div>
+
+</div>
+
+</div>
+
+<footer>© 2026 Barangay Quinagaringan Pequeno</footer>
+
+</body>
+</html>

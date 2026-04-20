@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>About - Barangay Quinagaringan Pequeño</title>
+
+<style>
+body{
+    font-family:Arial;
+    margin:0;
+    background:#f2f6fc;
+}
+
+/* HEADER + FOOTER */
+header,footer{
+    background:#446bae;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* NAV */
+nav{
+    background:#062a63;
+    padding:10px;
+    text-align:center;
+}
+nav a{
+    color:white;
+    margin:0 15px;
+    text-decoration:none;
+    font-weight:bold;
+}
+nav a:hover{
+    color:#ffd24d;
+}
+
+/* CONTAINER */
+.container{
+    padding:30px;
+}
+
+/* TOP GRID (HISTORY + VISION) */
+.top-section{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+/* CARD DESIGN */
+.card{
+    background: rgba(255,255,255,0.6);
+    backdrop-filter: blur(10px);
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+}
+
+/* BORDER COLORS */
+.history{
+    border-left:6px solid #42a5f5; /* BLUE */
+}
+
+.vision{
+    border-left:6px solid #66bb6a; /* GREEN */
+}
+
+.official-card{
+    border-left:6px solid #ffa726; /* ORANGE */
+    margin-top:20px;
+}
+
+/* TITLES */
+.card h2{
+    color:#0b3d91;
+}
+
+/* OFFICIALS GRID */
+.officials{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(120px,1fr));
+    gap:20px;
+    margin-top:15px;
+    text-align:center;
+}
+
+.official{
+    background:white;
+    padding:10px;
+    border-radius:10px;
+    box-shadow:0 5px 10px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.official:hover{
+    transform:scale(1.05);
+}
+
+.official img{
+    width:80px;
+    height:80px;
+    object-fit:cover;
+    border-radius:8px;
+    margin-bottom:8px;
+}
+
+/* RESPONSIVE */
+@media(max-width:700px){
+    .top-section{
+        grid-template-columns:1fr;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>About Quinagaringan Pequeño</h1>
+</header>
+
+<nav>
+<a href="index (1).html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="news.html">News</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+
+<!-- TOP SECTION -->
+<div class="top-section">
+
+    <!-- HISTORY -->
+    <div class="card history">
+        <h2>History</h2>
+        <p>
+            <br>Barangay Quinagaringan Pequeno is a peaceful rural community in Passi City, within the province of Iloilo. It is known for its simple lifestyle, strong local governance, and active participation of residents in community programs.</br>
+            <br>Like many rural barangays in Passi City, Quinagaringan Pequeno was established as part of the gradual development of agricultural communities in the area. The name “Quinagaringan” is shared with a nearby larger barangay, with “Pequeno” indicating a smaller or subdivided portion of the original community.
+            Over time, the barangay has grown into a stable settlement where families have built long-standing homes and livelihoods, mostly centered on farming and small-scale economic activities. Its development has been shaped by strong community cooperation and consistent support from local government units.</br>
+            <br>In conclusion, Barangay Quinagaringan Pequeno stands as a quiet yet organized rural community within Passi City. Through strong leadership, active citizen participation, and a shared sense of responsibility, the barangay continues to maintain peace and gradually improve its development. Its simplicity, cooperation, and strong community values make it a good example of effective grassroots governance in the Philippines.</br>
+        </p>
+    </div>
+
+    <!-- VISION & MISSION -->
+    <div class="card vision">
+        <h2>Vision</h2>
+        <p>
+            A progressive, peaceful, and self-sufficient barangay with empowered residents living in a sustainable environment, preserving our cultural heritage while embracing development.
+        </p>
+
+        <h2>Mission</h2>
+        <p>
+            To deliver basic services efficiently, promote participatory governance, protect the environment, and improve the quality of life of every Batu resident through transparent and accountable leadership.
+        </p>
+    </div>
+
+</div>
+
+<!-- OFFICIALS -->
+<div class="card official-card">
+<h2>Barangay Officials</h2>
+
+<div class="officials">
+
+<div class="official">
+<img src="kap.png" alt="">
+<p>Hon. Errol Panadero<br><b>Captain</b></p>
+</div>
+
+<div class="official">
+<img src="ra.png" alt="">
+<p>Hon. Razel Lorque<br><b>Kagawad</b></p>
+</div>
+
+<div class="official">
+<img src="fe.png" alt="">
+<p>Hon. Felomino Galudo <br><b>Kagawad</b></p>
+</div>
+
+<div class="official">
+<img src="sh.png" alt="">
+<p>Hon. Shirley Zante <br><b>Kagawad</b></p>
+</div>
+
+<div class="official">
+<img src="ed.png" alt="">
+<p>Hon. Eden Joy Palma <br><b>Kagawad</b></p>
+</div>
+
+<div class="official">
+<img src="ba.png" alt="">
+<p>Hon. Rosadilla Balasa <br><b>Kagawad</b></p>
+</div>
+
+<div class="official">
+<img src="sab.png" alt="">
+<p>Hon. Jovanni Nellasca <br><b>Kagawad</b></p>
+</div>
+
+<div class="official">
+<img src="jo.png" alt="">
+<p>Hon. John Paguntalan <br><b>Kagawad</b></p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<footer>© 2026 Barangay Quinagaringan Pequeno</footer>
+
+</body>
+</html>
